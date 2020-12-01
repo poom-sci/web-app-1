@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from "./Menu"
+import './Header.css';
 
 export default class Header extends React.Component{ 
     
@@ -9,10 +10,10 @@ export default class Header extends React.Component{
     }
     render() {
       return (
-        <div>
+        <div className="Header">
           <Menu />
           <button onClick={this.clickHandler} >CLICK ME!</button>
-          <h1 >Hello, {this.state.name}</h1>
+      <h1 textContent={this.state.name}>{this.props.textContent}</h1>
         </div>
         )
     }

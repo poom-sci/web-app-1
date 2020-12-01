@@ -1,4 +1,5 @@
 import React from 'react';
+import './Menu.css';
 
 export default class Menu extends React.Component{ 
 
@@ -11,16 +12,18 @@ export default class Menu extends React.Component{
     render() {
       return (
         <div>
-          <button onClick={this.homeClickHandler} >HOME</button>
-          <button onClick={this.clickHandler} >PRODUCTS</button>
-          <button onClick={this.clickHandler} >GALLERY</button>
-          <button onClick={this.clickHandler} >CONTACT</button>
+
+          <button class="menu-button" onClick={this.homeClickHandler} >HOME</button>
+          <button class="menu-button" onClick={this.clickHandler} >PRODUCTS</button>
+          <button class="menu-button" onClick={this.clickHandler} >GALLERY</button>
+          <button class="menu-button" onClick={this.clickHandler} >CONTACT</button>
+        
         </div>
         )
     }
 
     homeClickHandler=(event)=>{
-        event.currentTarget.parentElement.parentElement.childNodes[2].innerText="123"
+        event.currentTarget.parentElement.parentElement.childNodes[2].textContent+="123"
         
         // this.setState({name:this.state.name+"1"})
     }
