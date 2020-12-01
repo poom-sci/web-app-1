@@ -1,14 +1,16 @@
 import React from 'react';
+import Menu from "./Menu"
 
 export default class Header extends React.Component{ 
-    //this.state={name:"poom"}
-    state={name:"poom"}
+    
     constructor(props){
         super(props)
+        this.state={name:"poom"}
     }
     render() {
       return (
         <div>
+          <Menu />
           <button onClick={this.clickHandler} >CLICK ME!</button>
           <h1 >Hello, {this.state.name}</h1>
         </div>
