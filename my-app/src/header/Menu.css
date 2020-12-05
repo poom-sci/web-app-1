@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Oxygen:wght@700&display=swap");
+.menu-button {
+    /* text-align: center; */
+    /* display: inline-block; */
+    font-size: 20px;
+    font-family: "Oxygen";
+    color: rgb(255, 255, 255);
+    background-color: lightblue;
+    /* box-shadow: 5px 10px #cccccc; */
+    margin: 10px;
+    padding: 10 px;
+    width: 100 px;
+    height: 65 px;
+    outline: 10px;
+}
+
+.menu-button:hover {
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* font-size: 20px;
+    font-family: "Castoro";*/
+    color: rgb(230, 21, 21); 
+    background-color: rgb(246, 248, 130);
+    box-shadow: 3px 5px 2px 1px #7c7676;
+    /* display: none; */
+
+}
