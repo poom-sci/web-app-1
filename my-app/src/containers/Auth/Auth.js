@@ -111,7 +111,6 @@ class Auth extends Component {
     let errorMassage = null;
 
     if (this.props.error) {
-      console.log(this.props.error);
       errorMassage = <p>{this.props.error.message}</p>;
     }
 

@@ -5,7 +5,7 @@ import asyncComponent from './hoc/asyncComponent/asyncComponent'
 
 import Layout from "./hoc/Layout/Layout";
 import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
-import Logout from "./containers/Auth/Logout.js/Logout";
+import Logout from "./containers/Auth/Logout/Logout";
 import * as actions from "./store/actions/index";
 
 const asyncCheckout=asyncComponent(()=>{
